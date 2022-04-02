@@ -1,0 +1,235 @@
+/* Valid for all of the document (*) */
+* { 
+	box-sizing: border-box;
+}
+
+/* HTML and body basic styling and background color */
+html, body {
+	min-height: 100%;
+	color: white;
+    background: #2c3e50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+	font-size: 1.4rem;
+    font-family: 'Sora', sans-serif;
+}
+
+/* Typography styling */
+
+
+h1 {
+	font-size: 2.8rem;
+    text-align: center;
+    font-weight: 600; 
+}
+
+h2 {
+	font-size: 2.3rem;
+    text-align: center;
+    font-weight: 500;
+    
+}
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+h4 {
+	font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+h5 {
+	font-size: 1.4rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    text-align: justify;
+    font-weight:100;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+
+/* Styling for React Components in the What is React page  */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 1rem;
+    text-align:left;
+    font-weight: 100;
+
+}
+
+/* Navigation bar styling and hover effect */
+
+.navbar {
+    position: sticky;
+    margin-right:auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 0;
+    padding: 10px 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    background-color: #ffffff; 
+    border-radius: 2rem;
+    width:fit-content;
+
+}
+
+.navbar a {
+    color: black;
+    margin-right: 1.5rem;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.navbar a:hover {
+    border-bottom: 3px solid #2c3e50;
+  }
+  
+  .navbar a:active {
+    border-bottom: 3px solid #2c3e50;
+  }
+
+/* Media queries for Responsive Design */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    video {
+    max-width: 80%;
+    height: auto;
+}
+    .iphone-img {
+        display: none;
+    }
+
+}
+
+/* End of media queries */
+
+
+/* Logo styling and webkit animation */
+
+.logo {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+/* Styling of the images, video and button */
+
+img {
+    max-width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iphone-img {
+    float:left; 
+    margin-left: 2rem; 
+    margin-right: 1rem;
+    max-width: 20%;
+}
+
+video {
+    max-width: 40%;
+    height: auto;
+}
+
+button {
+    background-color:rgb(106, 228, 255); 
+    border-radius: 2rem; 
+    padding: 2%;
+    display: inline-block;
+}
+
+
+/* Cards styling */
+
+
+.big_card {
+    display: inline-block;
+    background-color: #f5f5f5;
+    border-radius: 25px 25px 25px 25px;
+    padding: 0.5rem;
+    margin-left: 3rem; 
+    margin-right: 3rem;
+    color: black;
+}
+
+.card {
+    display: inline-block;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    width:fit-content;
+    height:fit-content;
+    padding: 1rem;
+    
+}
+.card p {
+    color: black;
+    text-align: center;
+}
+
+
+/* Footer styling */
+
+
+  footer {
+    position: sticky;
+    display:inline-block;
+    height: 3rem; 
+    width:fit-content;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: -15rem;
+      
+  }
+
+  footer p {
+    font-size: 0.8rem; 
+    bottom: 0; 
+    left: 50%; 
+    right: 50%; 
+    padding: 0.2rem;
+    background-color:#ffffff;
+    border-radius: 2rem;
+    color: black;
+}
+
+
+
+
+
+
+
+  
